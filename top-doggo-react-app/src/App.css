@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css?family=Atomic Age')
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.glow {
+    
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00d0d0, 0 0 20px #00d0d0, 0 0 25px #00d0d0, 0 0 30px #00d0d0, 0 0 35px #00d0d0;
+    animation: glow 1s ease-in-out infinite alternate;
+
+}
+
+.glow-header {
+    
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00d0d0, 0 0 20px #00d0d0, 0 0 25px #00d0d0, 0 0 30px #00d0d0, 0 0 35px #00d0d0;
+    animation: glow-header 1s ease-in-out infinite alternate;
+
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 5px #26ff00, 0 0 10px #26ff00, 0 0 15px #00d0d0, 0 0 20px #00d0d0, 0 0 25px #00d0d0, 0 0 30px #00d0d0, 0 0 35px #00d0d0;
+  }
+  to {
+    text-shadow: 0 0 10px #26ff00, 0 0 20px #26ff00, 0 0 30px #00d0d0, 0 0 40px #00d0d0, 0 0 50px #00d0d0, 0 0 60px #00d0d0, 0 0 70px #00d0d0;
+  }
+}
+
+@keyframes glow-header {
+  from {
+    text-shadow: 0 0 5px #ff1d8e, 0 0 10px #ff1d8e, 0 0 15px #ff1d56, 0 0 20px #ff1d56, 0 0 25px #ff1d56, 0 0 30px #ff1d56, 0 0 35px #ff1d56;
+  }
+  to {
+    text-shadow: 0 0 10px #ff1d8e, 0 0 20px #ff1d8e, 0 0 30px #ff1d56, 0 0 40px #ff1d56, 0 0 50px #ff1d56, 0 0 60px #ff1d56, 0 0 70px #ff1d56;
+  }
+}
+
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+ 
+.shadow {filter: drop-shadow(18px 18px 25px #00d0d0);}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.doggo-entry {
+  position: relative;
+  width: 90%;
+  margin: auto;
+}
+
+.doggo-entry > img {
+  width: 100%;
+}
+
+.doggo-entry > h2 {
+  position: absolute;
+  width: 80%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 15px 0;
+  padding: 0 5px;
+  font-family: impact, sans-serif;
+  font-size: 2em;
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 1px;
+  text-shadow:
+  2px 2px 0 #000,
+  -2px -2px 0 #000,
+  2px -2px 0 #000,
+  -2px 2px 0 #000,
+  0 2px 0 #000,
+  2px 0 0 #000,
+  0 -2px 0 #000,
+  -2px 0 0 #000,
+  2px 2px 5px #000;
+}
+
+.doggo-entry > .bottom {
+  bottom: 0;
+}
+
+.doggo-entry > .top {
+  top: 0;
+}
+
+.add-doggo-form {
+  width: 90%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-doggo-form > input {
+  width: 45%;
+  height: 40px;
+}
+
+.add-doggo-form > button {
+  border: none;
+  font-family: VT323, monospace;
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  color: white;
+  background: #6441A5;
+}
+
+.add-doggo-form > input::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.add-doggo-form > input::-moz-placeholder { /* Firefox 19+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.add-doggo-form > input:-ms-input-placeholder { /* IE 10+ */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
+.add-doggo-form > input:-moz-placeholder { /* Firefox 18- */
+  font-family: VT323, monospace;
+  font-size: 25px;
+  text-align: cen
+}
